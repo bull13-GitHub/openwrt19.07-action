@@ -79,9 +79,9 @@ jobs:
         make defconfig
         sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm-k3|TARGET_DEVICES += phicomm-k3|' target/linux/bcm53xx/image/Makefile
    
-    #- name: SSH connection to Actions
-    #  uses: P3TERX/debugger-action@master
-    #  if: env.SSH_ACTIONS == 'true'
+    - name: SSH connection to Actions
+      uses: P3TERX/debugger-action@master
+      if: env.SSH_ACTIONS == 'true'
 
     - name: Download package
       id: package

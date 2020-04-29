@@ -13,7 +13,7 @@ on:
     types: [published]
   push:
     branches:
-      - dev-19.07
+      - dev-19.07.2
     paths:
       - '.config'
   #schedule:
@@ -22,8 +22,8 @@ on:
     types: [started]
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: dev-19.07
+  REPO_URL: https://github.com/openwrt/openwrt/archive/
+  REPO_BRANCH: dev-19.07.2
   CONFIG_FILE: k3.config
   DIY_SH: k3tem.sh
   FREE_UP_DISK: false

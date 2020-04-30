@@ -24,7 +24,7 @@ on:
 env:
   REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: dev-19.07
-  CONFIG_FILE: k3.config
+  CONFIG_FILE: .config
   DIY_SH: k3tem.sh
   FREE_UP_DISK: false
   SSH_ACTIONS: true
